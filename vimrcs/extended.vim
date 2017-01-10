@@ -35,7 +35,7 @@ set guioptions-=L
 
 " Colorscheme
 set background=dark
-colorscheme peaksea
+colorscheme slate
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
