@@ -146,7 +146,7 @@ let g:go_fmt_command = "goimports"
 let g:syntastic_python_checkers=['pyflakes']
 
 " Javascript
-let g:syntastic_javascript_checkers = ['jshint']
+" let g:syntastic_javascript_checkers = ['jshint']
 
 " Go
 let g:syntastic_auto_loc_list = 1

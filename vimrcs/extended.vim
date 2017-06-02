@@ -35,7 +35,7 @@ set guioptions-=L
 
 " Colorscheme
 set background=dark
-colorscheme slate
+colorscheme ir_black
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
