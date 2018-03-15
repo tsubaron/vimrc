@@ -58,3 +58,53 @@ au FileType coffee call CoffeeScriptFold()
 
 au FileType gitcommit call setpos('.', [0, 1, 1, 0])
 
+""""""""""""""""""""""""""""""
+" => html section
+"""""""""""""""""""""""""""""""
+function! HtmlSetting()
+  set expandtab
+  set tabstop=2
+  set shiftwidth=2
+endfunction
+au FileType html call HtmlSetting()
+au FileType *.blade.php call HtmlSetting()
+
+""""""""""""""""""""""""""""""
+" => css section
+"""""""""""""""""""""""""""""""
+function! CssSetting()
+  set expandtab
+  set tabstop=2
+  set shiftwidth=2
+endfunction
+au FileType css call CssSetting()
+au FileType sass call CssSetting()
+
+""""""""""""""""""""""""""""""
+" => php section
+"""""""""""""""""""""""""""""""
+au FileType php set expandtab
+au FileType php set tabstop=4
+au FileType php set shiftwidth=4
+
+""""""""""""""""""""""""""""""
+" => c++ section
+"""""""""""""""""""""""""""""""
+function! CppSetting()
+  set expandtab
+  set tabstop=2
+  set shiftwidth=2
+  map <leader>r :QuickRun<cr>
+endfunction
+au FileType cpp call CppSetting()
+
+""""""""""""""""""""""""""""""
+" => c section
+"""""""""""""""""""""""""""""""
+function! CSetting()
+  set expandtab
+  set tabstop=2
+  set shiftwidth=2
+  map <leader>r :QuickRun<cr>
+endfunction
+au FileType c call CSetting()

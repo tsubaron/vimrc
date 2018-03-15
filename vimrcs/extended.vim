@@ -60,14 +60,14 @@ endtry
 " => Command mode related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Smart mappings on the command line
-cno $h e ~/
-cno $d e ~/Desktop/
-cno $j e ./
-cno $c e <C-\>eCurrentFileDir("e")<cr>
+"cno $h e ~/
+"cno $d e ~/Desktop/
+"cno $j e ./
+"cno $c e <C-\>eCurrentFileDir("e")<cr>
 
 " $q is super useful when browsing on the command line
 " it deletes everything until the last slash 
-cno $q <C-\>eDeleteTillSlash()<cr>
+"cno $q <C-\>eDeleteTillSlash()<cr>
 
 " Bash like keys for the command line
 cnoremap <C-A>		<Home>
@@ -86,20 +86,20 @@ imap ½ $
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Parenthesis/bracket
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-vnoremap $1 <esc>`>a)<esc>`<i(<esc>
-vnoremap $2 <esc>`>a]<esc>`<i[<esc>
-vnoremap $3 <esc>`>a}<esc>`<i{<esc>
-vnoremap $$ <esc>`>a"<esc>`<i"<esc>
-vnoremap $q <esc>`>a'<esc>`<i'<esc>
-vnoremap $e <esc>`>a"<esc>`<i"<esc>
-
+"vnoremap $1 <esc>`>a)<esc>`<i(<esc>
+"vnoremap $2 <esc>`>a]<esc>`<i[<esc>
+"vnoremap $3 <esc>`>a}<esc>`<i{<esc>
+"vnoremap $$ <esc>`>a"<esc>`<i"<esc>
+"vnoremap $q <esc>`>a'<esc>`<i'<esc>
+"vnoremap $e <esc>`>a"<esc>`<i"<esc>
+"
 " Map auto complete of (, ", ', [
-inoremap $1 ()<esc>i
-inoremap $2 []<esc>i
-inoremap $3 {}<esc>i
-inoremap $4 {<esc>o}<esc>O
-inoremap $q ''<esc>i
-inoremap $e ""<esc>i
+"inoremap $1 ()<esc>i
+"inoremap $2 []<esc>i
+"inoremap $3 {}<esc>i
+"inoremap $4 {<esc>o}<esc>O
+"inoremap $q ''<esc>i
+"inoremap $e ""<esc>i
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
