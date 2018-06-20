@@ -22,9 +22,14 @@ au FileType python map <buffer> <leader>D ?def
 """"""""""""""""""""""""""""""
 " => JavaScript section
 """""""""""""""""""""""""""""""
-au FileType javascript set expandtab
-au FileType javascript set tabstop=2
-au FileType javascript set shiftwidth=2
+au BufNewFile,BufRead *.js setf javascript
+au BufNewFile,BufRead *.jsx setf javascript
+function! JsSetting()
+  set expandtab
+  set tabstop=2
+  set shiftwidth=2
+endfunction
+au FileType javascript call JsSetting()
 "au FileType javascript call JavaScriptFold()
 "au FileType javascript setl fen
 "au FileType javascript setl nocindent
@@ -61,24 +66,25 @@ au FileType gitcommit call setpos('.', [0, 1, 1, 0])
 """"""""""""""""""""""""""""""
 " => html section
 """""""""""""""""""""""""""""""
+au BufNewFile,BufRead *.blade.php setf html
 function! HtmlSetting()
   set expandtab
   set tabstop=2
   set shiftwidth=2
+  set autoindent
 endfunction
 au FileType html call HtmlSetting()
-au FileType *.blade.php call HtmlSetting()
 
 """"""""""""""""""""""""""""""
 " => css section
 """""""""""""""""""""""""""""""
+au BufNewFile,BufRead *.sass setf css
 function! CssSetting()
   set expandtab
   set tabstop=2
   set shiftwidth=2
 endfunction
 au FileType css call CssSetting()
-au FileType sass call CssSetting()
 
 """"""""""""""""""""""""""""""
 " => php section
