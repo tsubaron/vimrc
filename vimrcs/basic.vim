@@ -164,6 +164,11 @@ set tm=500
 " Add a bit extra margin to the left
 set foldcolumn=1
 
+" Transparent
+try
+  set transparency=20
+catch
+endtry
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
