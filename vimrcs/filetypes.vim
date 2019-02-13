@@ -67,6 +67,7 @@ au FileType gitcommit call setpos('.', [0, 1, 1, 0])
 " => html section
 """""""""""""""""""""""""""""""
 au BufNewFile,BufRead *.blade.php setf html
+au BufNewFile,BufRead *.vue setf html
 function! HtmlSetting()
   set expandtab
   set tabstop=2
