@@ -167,6 +167,11 @@ set tm=500
 " Add a bit extra margin to the left
 set foldcolumn=1
 
+" Transparent
+try
+  set transparency=20
+catch
+endtry
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
@@ -346,6 +351,7 @@ autocmd BufWrite *.coffee :call DeleteTrailingWS()
 vnoremap <silent> gv :call VisualSelection('gv', '')<CR>
 
 " Open Ag and put the cursor in the right position
+"map <leader>g :Ag 
 map <leader>g :Ag 
 
 " When you press <leader>r you can search and replace the selected text
