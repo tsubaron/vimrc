@@ -1,22 +1,22 @@
 """"""""""""""""""""""""""""""
 " => Python section
 """"""""""""""""""""""""""""""
-let python_highlight_all = 1
-au FileType python syn keyword pythonDecorator True None False self
-
-au BufNewFile,BufRead *.jinja set syntax=htmljinja
-au BufNewFile,BufRead *.mako set ft=mako
-
-au FileType python map <buffer> F :set foldmethod=indent<cr>
-
-au FileType python inoremap <buffer> $r return 
-au FileType python inoremap <buffer> $i import 
-au FileType python inoremap <buffer> $p print 
-au FileType python inoremap <buffer> $f #--- <esc>a
-au FileType python map <buffer> <leader>1 /class 
-au FileType python map <buffer> <leader>2 /def 
-au FileType python map <buffer> <leader>C ?class 
-au FileType python map <buffer> <leader>D ?def 
+"let python_highlight_all = 1
+"au FileType python syn keyword pythonDecorator True None False self
+"
+"au BufNewFile,BufRead *.jinja set syntax=htmljinja
+"au BufNewFile,BufRead *.mako set ft=mako
+"
+"au FileType python map <buffer> F :set foldmethod=indent<cr>
+"
+"au FileType python inoremap <buffer> $r return 
+"au FileType python inoremap <buffer> $i import 
+"au FileType python inoremap <buffer> $p print 
+"au FileType python inoremap <buffer> $f #--- <esc>a
+"au FileType python map <buffer> <leader>1 /class 
+"au FileType python map <buffer> <leader>2 /def 
+"au FileType python map <buffer> <leader>C ?class 
+"au FileType python map <buffer> <leader>D ?def 
 
 
 """"""""""""""""""""""""""""""
@@ -55,13 +55,13 @@ au FileType javascript call JsSetting()
 """"""""""""""""""""""""""""""
 " => CoffeeScript section
 """""""""""""""""""""""""""""""
-function! CoffeeScriptFold()
-    setl foldmethod=indent
-    setl foldlevelstart=1
-endfunction
-au FileType coffee call CoffeeScriptFold()
-
-au FileType gitcommit call setpos('.', [0, 1, 1, 0])
+"function! CoffeeScriptFold()
+"    setl foldmethod=indent
+"    setl foldlevelstart=1
+"endfunction
+"au FileType coffee call CoffeeScriptFold()
+"
+"au FileType gitcommit call setpos('.', [0, 1, 1, 0])
 
 """"""""""""""""""""""""""""""
 " => html section
@@ -134,7 +134,7 @@ function! CppSetting()
   set expandtab
   set tabstop=2
   set shiftwidth=2
-  map <leader>r :QuickRun<cr>
+"  map <leader>r :QuickRun<cr>
 endfunction
 au FileType cpp call CppSetting()
 
@@ -145,6 +145,6 @@ function! CSetting()
   set expandtab
   set tabstop=2
   set shiftwidth=2
-  map <leader>r :QuickRun<cr>
+"  map <leader>r :QuickRun<cr>
 endfunction
 au FileType c call CSetting()

@@ -338,6 +338,10 @@ func! DeleteTrailingWS()
 endfunc
 autocmd BufWrite *.py :call DeleteTrailingWS()
 autocmd BufWrite *.coffee :call DeleteTrailingWS()
+autocmd BufWrite *.html :call DeleteTrailingWS()
+autocmd BufWrite *.vue :call DeleteTrailingWS()
+autocmd BufWrite *.js :call DeleteTrailingWS()
+autocmd BufWrite *.php :call DeleteTrailingWS()
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -463,4 +467,8 @@ endfunction
 "   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 "endif
 
-
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => タブ変更
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <C-Tab> gt
+map <C-S-Tab> gT
