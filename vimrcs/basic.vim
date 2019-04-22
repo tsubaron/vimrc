@@ -96,6 +96,9 @@ vmap u <Nop>
 vmap U <Nop>
 vmap ~ <Nop>
 
+" IME disable
+set imdisable
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -177,7 +180,7 @@ endtry
 syntax enable 
 
 try
-    colorscheme desert
+    colorscheme irblack
 catch
 endtry
 
