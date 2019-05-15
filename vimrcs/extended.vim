@@ -78,35 +78,35 @@ cnoremap <C-P> <Up>
 cnoremap <C-N> <Down>
 
 " Map ½ to something useful
-map ½ $
-cmap ½ $
-imap ½ $
+" map ½ $
+" cmap ½ $
+" imap ½ $
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Parenthesis/bracket
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"vnoremap ( <esc>`>a)<esc>`<i(<esc>
-"vnoremap [ <esc>`>a]<esc>`<i[<esc>
-"vnoremap { <esc>`>a}<esc>`<i{<esc>
-"vnoremap " <esc>`>a"<esc>`<i"<esc>
-"vnoremap ' <esc>`>a'<esc>`<i'<esc>
-"vnoremap " <esc>`>a"<esc>`<i"<esc>
-"
+vnoremap ( <esc>`>a)<esc>`<i(<esc>
+vnoremap [ <esc>`>a]<esc>`<i[<esc>
+vnoremap { <esc>`>a}<esc>`<i{<esc>
+vnoremap " <esc>`>a"<esc>`<i"<esc>
+vnoremap ' <esc>`>a'<esc>`<i'<esc>
+vnoremap " <esc>`>a"<esc>`<i"<esc>
+
 "" Map auto complete of (, ", ', [
-"inoremap ( ()<esc>i
-"inoremap [ []<esc>i
-"inoremap { {}<esc>i
-"inoremap { {<esc>o}<esc>O
-"inoremap ' ''<esc>i
-"inoremap " ""<esc>i
-"
-"inoremap #( (
-"inoremap #[ [
-"inoremap #{ {
-"inoremap #{ {
-"inoremap #' '
-"inoremap #" "
+inoremap ( ()<esc>i
+inoremap [ []<esc>i
+inoremap { {}<esc>i
+inoremap { {<esc>o}<esc>O
+inoremap ' ''<esc>i
+inoremap " ""<esc>i
+
+inoremap #( (
+inoremap #[ [
+inoremap #{ {
+inoremap #{ {
+inoremap #' '
+inoremap #" "
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
